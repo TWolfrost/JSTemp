@@ -1,57 +1,24 @@
+<!DOCTYPE html>
 <html>
    <head>
-      <title>Esercitazione n. 3 di: Russo Luca - 4A..</title>
+      <meta charset="utf-8">
+      <title>Sorteggi di Classe</title>
+      <link rel="icon" href="4A.ico">
+
+      <link rel="stylesheet" href="style.css">
+      <script type="module" src="script.js" defer></script>
    </head>
-   
-   <body bgcolor="#181818">
-      
-      <font color="#FF33FF" face="verdana">
-         <h1>
-            La percezione dei colori ed il mistero del magenta.
-         </h1>
 
-         <h2>
-            Perché si dice che il Magenta è un colore che non esiste?
-         </h2>
+   <body>
+      <div id="settings">
+         <input id="groups" type="range" class="range" min="1" max="10" />
+         <select id="class">
+            <option value="none" hidden>Classe</option>
+            <option value="4A" selected>4A</option>
+         </select>
+         <button id="shuffle" class="button">Sorteggia</button>
+      </div>
 
-         <h3>
-            Il meccanismo fisiologico alla base della percezione dei colori.
-         </h3>
-      </font>
-      
-      <br>
-
-      <font color="#747AFF" face="century" size="5">
-         <p>
-            Osservando l’arcobaleno, possiamo vedere lo spettro della luce visibile nella sua totalità: dal rosso al violetto, passando per arancione, giallo, verde, ciano e blu.
-            All’appello manca però il magenta, parente stretto del fucsia. Come mai questo colore non appare all’interno dello spettro della luce visibile?
-         </p>
-
-         <p>
-            Nell’occhio umano la percezione dei colori è affidata ad un particolare tipo di cellule sensoriali della retina chiamate coni.
-            Ciascuno di questi gruppi è organizzato a sua volta in tre aree sensibili capaci di catturare, ciascuna, un solo colore dello spettro: una verde, un’altra blu e un’altra rossa.
-         </p>
-
-         <p>
-            Quando vediamo un colore che non coincide con quelli che le cellule retiniche catturano da una specifica lunghezza d’onda, è perché due lunghezze d’onda sono eccitate contemporaneamente.
-            Quello che succede nel caso del giallo, ad esempio, è che il rosso e il verde sono stati percepiti contemporaneamente.
-         </p>
-
-         <p>
-            La particolarità del magenta, che lo differenzia ad esempio dal giallo, è che provoca contemporaneamente il rilevamento di
-            due lunghezze d’onda che si trovano ai due estremi dello spettro luminoso, il rosso e il viola.
-         </p>
-
-         <p>
-            In questo caso, la prima opzione per il cervello sarebbe quella di trovare un colore che sia a metà strada tra i due.
-            Ma secondo quel procedimento, ciò che si otterrebbe sarebbe il verde, e questo non è rappresentativo della mistura tra rosso e viola.
-         </p>
-
-         <p>
-            Quindi quello che fa il cervello è proiettare il colore percepito su un sito che in realtà è vuoto.
-            Quando il magenta appare davanti agli occhi, il cervello inventa un colore che non corrisponde a nessuna parte dello spettro visibile.
-         </p>
-      </font>
-
+      <table id="draw"></table>
    </body>
 </html>
