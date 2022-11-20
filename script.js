@@ -1,7 +1,5 @@
 import CLASSES from "./classes.json" assert {type: "json"}
 
-alert(CLASSES);
-
 const NUMGROUPS = document.getElementById("groups");
 const SELCLASS = document.getElementById("class");
 const SHUFFLE = document.getElementById("shuffle");
