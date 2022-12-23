@@ -6,6 +6,14 @@ const SHUFFLE = document.getElementById("shuffle");
 const DRAW = document.getElementById("draw");
 
 
+for (const key in CLASSES)
+{
+   const OPT = document.createElement("option");
+   OPT.value = OPT.innerText = key;
+   SELCLASS.appendChild(OPT);
+}
+
+
 SHUFFLE.addEventListener("click", drawCurrent)
 SHUFFLE.addEventListener("touchend", drawCurrent)
 
@@ -15,10 +23,17 @@ function drawCurrent()
    let curClass = CLASSES[SELCLASS.value];
    let numGroups = NUMGROUPS.value;
 
+   if (numGroups > curClass.length)
+   {
+      for (let i=curClass.length; i<numGroups; i++)
+      {
+         curClass.push("");
+      }
+   }
+
    let drawed = draw(curClass, numGroups);
 
    let perGroup = Math.floor(curClass.length / numGroups);
-
    if (curClass.length % perGroup != 0) perGroup++;
 
    setTable(DRAW, drawed, NUMGROUPS.value, perGroup);
@@ -37,7 +52,7 @@ function draw(_class, numGroups)
       return arr;
    }
 
-   const perGruppo = Math.floor(_class.length / numGroups);
+   let perGruppo = Math.floor(_class.length / numGroups);
 
 
    let groups = [];
