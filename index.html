@@ -1,38 +1,58 @@
+<!DOCTYPE html>
 <html>
    <head>
-      <title>Il Web e la salute</title>
+      <meta name="viewport" content="width=1600" charset="utf-8">
+      <title>JS Hangman</title>
+      <link rel="icon" href="assets/hangman.ico">
+
+      <link rel="stylesheet" href="style.css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+      <script src="script.js" defer></script>
    </head>
 
-   <body bgcolor="#181818">
-      <table cellpadding="50">
-         <td align="justify">
-            <font color="#cccccc" face="arial" size="5">
-               <h1 align="center">Il Web e la salute</h1>
+   <body>
+      <br>
 
-               <p>
-                  &emsp;A più di 30 anni dalla sua nascita, Internet ci fornisce in pochi secondi l'accesso a qualsiasi tipo di informazione su qualsiasi argomento. Tuttavia, in questo mare di notizie dove chiunque può pubblicare contenuti, è chiaramente la qualità delle informazioni a farne le spese, perché il web è estremamente libero, ma poco controllato.
-               </p>
+      <canvas id="hangman" width="300" height="300"></canvas>
 
-               <p>
-                  &emsp;Ciò è un grande problema, poichè l'esperienza della malattia è temibile e frustrante non solo per i sintomi ma anche perché comporta una perdita di controllo, soprattutto per i soggetti affetti da <b><a href="./ipocondria.html">ipocondria</a></b>. La malattia può anche spingere alla ricerca di soluzioni facili e veloci, di cure promesse e di spiegazioni sul perché i consigli scomodi dei professionisti della salute siano sbagliati.
-               </p>
+      <br><br><br>
 
-               <p>
-                  &emsp;Infatti, numerosi sono i pazienti che cercano sul web informazioni di "primo soccorso", ancor prima di rivolgersi al medico di fiducia, specializzato nel sapere medico e della soluzione di ogni necessità legata alla salute.
-               </p>
+      <div id="word">
+         <br>
+      </div>
 
-               <p>
-                  &emsp;Senza entrare specificatamente nel merito della questione, giova sottolineare come per molti prodotti il fatto di essere "naturali" non significa al tempo stesso essere "salutari" ed anche in questi casi andrebbero accertate le fonti e le ricerche svolte. Numerose inoltre sono le eclatanti fake news riguardanti miracolose proprietà curative di alcune piante.
-               </p>
+      <br><br><br>
 
-               <p>
-                  &emsp;<b><a href="./regole.html">Ecco le 3 regole</a></b> da rispettare per valutare l'attendibilità delle informazioni mediche apprese nel web, usando al meglio le sue innumerevoli risorse.
-               </p>
-            </font>
-         </td>
-         <td>
-            <img src="https://i.postimg.cc/zGkZCVzZ/info.png">
-         </td>
+      <table id="letters">
+         <td id="A">A</td>
+         <td id="B">B</td>
+         <td id="C">C</td>
+         <td id="D">D</td>
+         <td id="E">E</td>
+         <td id="F">F</td>
+         <td id="G">G</td>
+         <td id="H">H</td>
+         <td id="I">I</td>
+         <td id="J">J</td>
+         <td id="K">K</td>
+         <td id="L">L</td>
+         <td id="M">M</td>
+         <td id="N">N</td>
+         <td id="O">O</td>
+         <td id="P">P</td>
+         <td id="Q">Q</td>
+         <td id="R">R</td>
+         <td id="S">S</td>
+         <td id="T">T</td>
+         <td id="U">U</td>
+         <td id="V">V</td>
+         <td id="W">W</td>
+         <td id="X">X</td>
+         <td id="Y">Y</td>
+         <td id="Z">Z</td>
       </table>
+
+      <br>
    </body>
 </html>
